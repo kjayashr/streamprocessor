@@ -1,6 +1,7 @@
 package microseriveces.streams.splunk.demo;
 
 import com.sun.deploy.services.Service;
+
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -59,6 +60,7 @@ import static io.confluent.examples.streams.microservices.util.MicroserviceUtils
 import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.setTimeout;
 import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.startJetty;
 import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.startProducer;
+
 import static org.apache.kafka.streams.state.StreamsMetadata.NOT_AVAILABLE;
 
 public class OrdersService implements Service {
