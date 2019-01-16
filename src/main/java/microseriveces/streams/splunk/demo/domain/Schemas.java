@@ -1,15 +1,21 @@
 package microseriveces.streams.splunk.demo.domain;
 
-import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
-import org.apache.kafka.common.serialization.Serde;
-import org.apache.kafka.common.serialization.Serdes;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.ProductTypeSerde;
+import static io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG;
 
+import microservices.streams.splunk.demo.Customer;
+import microservices.streams.splunk.demo.Order;
+import microservices.streams.splunk.demo.OrderEnriched;
+import microservices.streams.splunk.demo.OrderValidation;
+import microservices.streams.splunk.demo.OrderValue;
+import microservices.streams.splunk.demo.Payment;
+import microservices.streams.splunk.demo.Product;
+import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import static io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG;
-
+import org.apache.kafka.common.serialization.Serde;
+import org.apache.kafka.common.serialization.Serdes;
 public class Schemas {
 
     public static String schemaRegistryUrl = "";
@@ -73,7 +79,7 @@ public class Schemas {
     }
 
     public static void configureSerdesWithSchemaRegistryUrl(final String url) {
-        Topics.createTopics(); //wipe cached schema registry
+        Topics.createTopics();
         for (final Topic topic : Topics.ALL.values()) {
             configure(topic.keySerde(), url);
             configure(topic.valueSerde(), url);

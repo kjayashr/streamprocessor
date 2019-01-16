@@ -1,9 +1,9 @@
 package microseriveces.streams.splunk.demo.domain.beans;
 
 
-import io.confluent.examples.streams.avro.microservices.Order;
-import io.confluent.examples.streams.avro.microservices.OrderState;
-import io.confluent.examples.streams.avro.microservices.Product;
+import microservices.streams.splunk.demo.Order;
+import microservices.streams.splunk.demo.OrderState;
+import microservices.streams.splunk.demo.Product;
 
 /**
  * Simple DTO used by the REST interface

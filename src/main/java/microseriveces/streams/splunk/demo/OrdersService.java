@@ -43,8 +43,8 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import microseriveces.streams.splunk.demo.Order;
-import io.confluent.examples.streams.avro.microservices.OrderState;
+import microservices.streams.splunk.demo.Order;
+import microservices.streams.splunk.demo.OrderState;
 
 import io.confluent.examples.streams.interactivequeries.HostStoreInfo;
 import io.confluent.examples.streams.interactivequeries.MetadataService;
@@ -52,14 +52,14 @@ import  microseriveces.streams.splunk.demo.domain.Schemas;
 import microseriveces.streams.splunk.demo.domain.beans.OrderBean;
 import io.confluent.examples.streams.microservices.util.Paths;
 
-import static io.confluent.examples.streams.microservices.domain.Schemas.Topics.ORDERS;
-import static io.confluent.examples.streams.microservices.domain.beans.OrderBean.fromBean;
-import static io.confluent.examples.streams.microservices.domain.beans.OrderBean.toBean;
-import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.addShutdownHookAndBlock;
-import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.baseStreamsConfig;
-import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.setTimeout;
-import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.startJetty;
-import static io.confluent.examples.streams.microservices.util.MicroserviceUtils.startProducer;
+import static microseriveces.streams.splunk.demo.domain.Schemas.Topics.ORDERS;
+import static microseriveces.streams.splunk.demo.domain.beans.OrderBean.fromBean;
+import static microseriveces.streams.splunk.demo.domain.beans.OrderBean.toBean;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.addShutdownHookAndBlock;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.baseStreamsConfig;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.setTimeout;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.startJetty;
+import static microseriveces.streams.splunk.demo.util.MicroserviceUtils.startProducer;
 
 import static org.apache.kafka.streams.state.StreamsMetadata.NOT_AVAILABLE;
 
