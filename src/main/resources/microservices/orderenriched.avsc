@@ -1,5 +1,5 @@
 [
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "record",
  "name": "OrderEnriched",
  "fields": [

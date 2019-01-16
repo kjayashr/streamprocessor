@@ -43,7 +43,7 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import io.confluent.examples.streams.avro.microservices.Order;
+import microseriveces.streams.splunk.demo.Order;
 import io.confluent.examples.streams.avro.microservices.OrderState;
 
 import io.confluent.examples.streams.interactivequeries.HostStoreInfo;

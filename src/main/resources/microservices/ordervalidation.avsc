@@ -1,15 +1,15 @@
 [
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "enum",
  "name": "OrderValidationType",
  "symbols" : ["INVENTORY_CHECK", "FRAUD_CHECK", "ORDER_DETAILS_CHECK"]
 },
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "enum",
  "name": "OrderValidationResult",
  "symbols" : ["PASS", "FAIL", "ERROR"]
 },
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "record",
  "name": "OrderValidation",
  "fields": [

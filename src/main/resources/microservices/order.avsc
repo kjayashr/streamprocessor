@@ -4,12 +4,12 @@
  "name": "OrderState",
  "symbols" : ["CREATED", "VALIDATED", "FAILED", "SHIPPED"]
 },
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "enum",
  "name": "Product",
  "symbols" : ["JUMPERS", "UNDERPANTS", "STOCKINGS"]
 },
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
  "type": "record",
  "name": "Order",
  "fields": [
@@ -21,7 +21,7 @@
      {"name": "price", "type": "double"}
  ]
 },
-{"namespace": "microseriveces.streams.splunk.demo",
+{"namespace": "microservices.streams.splunk.demo",
    "type": "record",
    "name": "OrderValue",
     "fields": [
