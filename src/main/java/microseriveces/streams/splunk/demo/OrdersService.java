@@ -4,7 +4,6 @@ import com.sun.deploy.services.Service;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.StreamsBuilder;
@@ -46,10 +45,11 @@ import javax.ws.rs.core.Response;
 
 import io.confluent.examples.streams.avro.microservices.Order;
 import io.confluent.examples.streams.avro.microservices.OrderState;
+
 import io.confluent.examples.streams.interactivequeries.HostStoreInfo;
 import io.confluent.examples.streams.interactivequeries.MetadataService;
-import io.confluent.examples.streams.microservices.domain.Schemas;
-import io.confluent.examples.streams.microservices.domain.beans.OrderBean;
+import  microseriveces.streams.splunk.demo.domain.Schemas;
+import microseriveces.streams.splunk.demo.domain.beans.OrderBean;
 import io.confluent.examples.streams.microservices.util.Paths;
 
 import static io.confluent.examples.streams.microservices.domain.Schemas.Topics.ORDERS;
