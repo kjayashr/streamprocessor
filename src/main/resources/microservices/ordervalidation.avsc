@@ -4,12 +4,12 @@
  "name": "OrderValidationType",
  "symbols" : ["INVENTORY_CHECK", "FRAUD_CHECK", "ORDER_DETAILS_CHECK"]
 },
-{"namespace": "io.confluent.examples.streams.avro.microservices",
+{"namespace": "microseriveces.streams.splunk.demo",
  "type": "enum",
  "name": "OrderValidationResult",
  "symbols" : ["PASS", "FAIL", "ERROR"]
 },
-{"namespace": "io.confluent.examples.streams.avro.microservices",
+{"namespace": "microseriveces.streams.splunk.demo",
  "type": "record",
  "name": "OrderValidation",
  "fields": [
